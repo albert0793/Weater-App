@@ -4,54 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-        <div class="search__box">
-            <input type="text" placeholder="Ingrese su ciudad">
-            <i class="uil uil-search" id="search"></i>
+      <div class="search__box">
+        <input type="text" placeholder="Ingrese su ciudad" />
+        <i class="uil uil-search" id="search"></i>
+      </div>
+      <div class="error__box">
+        <img src="./img/404.png" />
+        <p>City Not Found</p>
+      </div>
+      <div class="weather__data">
+        <h3 id="city"></h3>
+        <div class="image__box">
+          <img src="" alt="" srcset="" id="station__image" />
         </div>
-        <div class="error__box">
-            <img src="./img/404.png">
-          <p>City Not Found </p>
-          <!-- <span>&#x2680</span>
-          <span>&#x2681</span>
-          <span>&#x2682</span>
-          <span>&#x2683</span>
-          <span>&#x2684</span>
-          <span>&#x2685</span>
-          <span>&#x2686</span> -->
-
+      </div>
+      <div class="weather__information">
+        <div class="flex">
+          <div class="column">
+            <div>
+              <h4 class="wind">Wind</h4>
+              <i class="uil uil-wind"></i>
+            </div>
+            <span id="wind">0</span>
+          </div>
+          <div class="column">
+            <div>
+              <h4 class="wind">Humidity</h4>
+              <i class="uil uil-water"></i>
+            </div>
+            <span id="humidity">0</span>
+          </div>
+          <div class="column">
+            <div>
+              <h4 class="wind">temperature</h4>
+              <i class="uil uil-temperature-quarter"></i>
+            </div>
+            <span id="temperature">0</span>
+          </div>
         </div>
-        <div class="weather__information">
-            <h3 id="city">Paris</h3>
-            <img src="./img/rain.jpeg" alt="" srcset="">
-            <div>
-                <div class="row">
-                    <h4 class="wind">Wind</h4>
-                    <i class="uil uil-wind"></i>
-                </div>
-                <span id="wind">0</span>
-            </div>
-            <div>
-                <div class="row">
-                    <h4 class="wind">Humidity</h4>
-                    <i class="uil uil-water"></i>
-                </div>
-                <span id="humidity">0</span>
-            </div>
-            <div>
-                <div class="row">
-                    <h4 class="wind">temperature</h4>
-                    <i class="uil uil-temperature-quarter"></i>
-                </div>
-                <span id="temperature">0</span>
-            </div>
-        </div>
+      </div>
     </div>
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>
+
+<!-- 
+<span>&#x2680</span>
+<span>&#x2681</span>
+<span>&#x2682</span>
+<span>&#x2683</span>
+<span>&#x2684</span>
+<span>&#x2685</span>
+<span>&#x2686</span> 
+-->
