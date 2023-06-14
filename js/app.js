@@ -21,11 +21,9 @@ async function getWeatherInfo() {
           alert("Please wrote a city name before.");
         }, 500);
       } else if (data.cod == 404) {
-        container.style.height = "350px";
+        container.style.height = "420px";
         errorBox.style.display = "flex";
-        weatherContainer.innerHTML = "";
         weatherContainer.style.display = "none";
-        return;
       } else {
         const { humidity, temp } = data.main;
         const wind = data.wind.speed;
